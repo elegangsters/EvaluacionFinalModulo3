@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="pruebaborrar.css">
+  <script src="./Bootstrap/js/jquery-3.6.0.min.js"></script>
+  <script src="./Plugins/jQueryValidator/jquery.validate.min.js"></script>
+  <script src="./Bootstrap/js/bootstrap.min.js"></script>
+  <script src="jqueryvalidaciones.js"></script>
+  <title>Asesorías en Prevención de Riesgos</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" margin= "0px">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" id="nav">Pagina principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="crearcapacitacion.html">Crear capacitación</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="crearusuario.html">Crear usuario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="listarcapacitaciones.html">Listar capacitaciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="listadousuarios.html">Listar usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="listadovisitas.html">Listar visitas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="listadopago.html">Listar pagos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="listadoasesorias.html">Listar asesorías</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+      </div>    
+    </nav>
+  </header>
+<div class="container" >
+  <h2>Editar cliente</h2>
+  <form class="row g-3 needs-validation" id="editarCliente" novalidate>
+    <div class="col-md-4">
+      <label for="nombreCliente" class="form-label">Nombres del cliente</label>
+      <input type="text" class="form-control" id="nombreCliente" name="nombreCliente" placeholder="Juan">
+    </div>
+    <div class="col-md-4">
+      <label for="apellidoCliente" class="form-label">Apellidos del cliente</label>
+      <input type="text" class="form-control" id="apellidoCliente" name="apellidoCliente" placeholder="Ávilez">
+    </div>
+    <div class="col-md-4"  >
+      <label for="runCliente" class="form-label">RUN del cliente</label>
+      <input type="number" class="form-control" id="runCliente" name="runCliente" placeholder="123456789">  
+    </div>
+    <div class="col-md-3">
+      <label for="telefonoCliente" class="form-label">Teléfono del cliente</label>
+      <input type="tel" class="form-control" id="telefonoCliente" name="telefonoCliente" placeholder="912345678">
+    </div>
+    <div class="col-md-6">
+      <label for="afpCliente" class="form-label">AFP del cliente</label>
+      <input type="text" class="form-control" id="afpCliente" name="afpCliente" placeholder="Capital">
+    </div>
+    <div class="col-md-3">
+      <label for="sisSalud" class="form-label">Sistema de salud del cliente</label>
+      <input type="text" class="form-control" id="sisSalud" name="sisSalud" placeholder="Fonasa">
+    </div>
+    <div class="col-md-6">
+      <label for="direCliente" class="form-label">Dirección del cliente</label>
+      <input type="text" class="form-control" id="direCliente" name="direCliente" placeholder="Los Alamos 123">
+    </div>
+    <div class="col-md-3">
+      <label for="edadCliente" class="form-label">Edad del cliente</label>
+      <input type="number" class="form-control" id="edadCliente" name="edadCliente" placeholder="100">
+    </div>
+    <div class="cold-md-12">
+      <button type="submit" class="btn btn-dark" id="enviarCliente" name="enviarCliente">Editar cliente</button>
+    </div>
+  </form>
+</div>
+<footer class="footer">
+    <div id="divfooter">><p id="pfooter">Copyrigth: Todos los derechos reservados</p></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pruebaborrar.css">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./Plugins/Datatables/datatables.min.css">
+    <link rel="stylesheet" href="./Plugins/Datatables/DataTables-1.10.24/css/dataTables.bootstrap4.min.css">
+    <script src="./Bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="./Bootstrap/js/bootstrap.min.js"></script>
+    <script src="./Plugins/Datatables/datatables.min.js"></script>
+    <script src="./Plugins/jQueryValidator/jquery.validate.min.js"></script>
+    <script src="selectAsistentes.js"></script>
+    <script src="validarFormAsistentes.js"></script>
+    <title>Asesorías en Prevención de Riesgos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" margin= "0px">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="nav">Pagina principal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="crearcapacitacion.html">Crear capacitación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="crearusuario.html">Crear usuario</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="listarcapacitaciones.html">Listar capacitaciones</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link active" href="listadousuarios.html">Listar usuarios</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="listadovisitas.html">Listar visitas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="listadopago.html">Listar pagos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="listadoasesorias.html">Listar asesorías</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table id="tablaAsistentes" class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                              <th>ID asistentes</th>
+                              <th>Nombre del asistente</th>
+                              <th>Email</th>
+                              <th>Teléfono</th>
+                              <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Pablo Carmona</td>
+                                <td>pablo.carmona@gmail.com</td>
+                                <td>+56923335464</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Felipe Riquelme</td>
+                                <td>felipe.riquelme@gmail.com</td>
+                                <td>+56998343277</td>
+                                <td></td>
+                            </tr>  
+                            <tr>
+                                <td>003</td>
+                                <td>José Burgos</td>
+                                <td>Jose.burgos@gmail.com</td>
+                                <td>+56944330989</td>
+                                <td></td>
+                            </tr>   
+                            <tr>
+                                <td>004</td>
+                                <td>Ricardo Cárcamo</td>
+                                <td>ricardo.carcamo@gmail.com</td>
+                                <td>+56930094856</td>
+                                <td></td>
+                            </tr>   
+                            <tr>
+                                <td>005</td>
+                                <td>Ricardo Cárcamo</td>
+                                <td>ricardo.carcamo@gmail.com</td>
+                                <td>+56930094856</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>006</td>
+                                <td>Francisco Rojas</td>
+                                <td>francisco.rojas@gmail.com</td>
+                                <td>+56998887366</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>007</td>
+                                <td>Oscar Lecaros</td>
+                                <td>oscar.lecaros@gmail.com</td>
+                                <td>+56966778844</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>008</td>
+                                <td>Victor Cifuentes</td>
+                                <td>victor.cifuentes@gmail.com</td>
+                                <td>+56936728372</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>009</td>
+                                <td>Rubén Martinez</td>
+                                <td>ruben.martinez@gmail.com</td>
+                                <td>+56936273645</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>010</td>
+                                <td>Francisco Orozco</td>
+                                <td>francisco.orozco@gmail.com</td>
+                                <td>+56973842999</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" >
+        <h2>Agregar asistente</h2>
+        <form class="row g-3 needs-validation" id="agregarAsis" novalidate>
+          <div class="col-md-4">
+            <label for="idAsistente" class="form-label">Identificar del asistente</label>
+            <input type="number" class="form-control" id="idAsistente" name="idAsistente" placeholder="001">
+          </div>
+          <div class="col-md-4">
+            <label for="nombreAsistente" class="form-label">Nombre completo del asistente</label>
+            <input type="text" class="form-control" id="nombreAsistente" name="nombreAsistente" placeholder="Catalina Andrea Vásquez Burgos">
+          </div>
+          <div class="col-md-4"  >
+            <label for="edadAsistente" class="form-label">Edad</label>
+            <input type="number" class="form-control" id="edadAsistente" name="edadAsistente" placeholder="100">  
+          </div>
+          <div class="col-md-5">
+            <label for="emailAsistente" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailAsistente" name="emailAsistente" placeholder="nombre@ejemplo.cl">
+          </div>
+          <div class="col-md-5">
+            <label for="telefonoAsistente" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefonoAsistente" name="telefonoAsistente" placeholder="+56912345678">
+          </div>
+          <div class="col-md-3">
+            <label for="datosCapacitacion" class="form-label">Datos capacitación</label>
+            <select class="form-select" name="datosCapacitacion" id="datosCapacitacion" aria-label="Default select example"><option value="">Seleccionar</option></select>
+          </div>
+          <div class="cold-md-12">
+            <button type="submit" class="btn btn-dark" id="agregarAsistente" name="agregarAsistente">Agregar asistente</button>
+          </div>
+        </form>
+    </div>
+    </footer>
+    <script src="funcionesdatatables.js"></script>
+</body>
+</html>
